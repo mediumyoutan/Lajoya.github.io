@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  <body>
+body{
+   margin: 0; /*外边距*/
+	padding: 0; /*内边距*/
+	background-color: 4169E1/*背景颜色*/
+}
+    #myHeader1{
+      background-color:lightblue;
+      color:white;
+      padding:200px;
+      font-size:70px;
+      text-align: center
+    }
+    #myHeader2{
+      background-color:RoyalBlue;
+      color:white;
+      font-size:17px;
+      padding:40px;
+  }
+  #myHeader3{
+    background-color:MediumBlue;
+    color:white;
+    font-size:17px;
+    padding:40px;
+    text-align: center
+}
+ #button{
+    width: 1000px;
+    height: 70px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+    </style>
+
+    <h1 id="myHeader1">十二星次</h1>
+    <h2 id="myHeader2">在东方占星学中，黄道12星次是人类十二天性的代名词，一个人出生时，各星次落入黄道上的位置，说明了一个人的先天性格及天赋。黄道12星次象征心理层面，反映出一个人行为的表现的方式。于是将黄道分成12个星次，称为黄道12星次。并且与二十四节气、十二地支，十天干，四象，五行，二十八星宿一起组建了东方占星学，依次为星纪、玄枵、娵訾、降娄、大梁、实沈、鹑首、鹑火、鹑尾、寿星、大火、析木。
+    </h2>
+    <h3 id="myHeader3">选择你的出生日期，找到自己对应的星次吧！
+
+   <p align="center">
+        请输入一个生日值（如：0123）：
+        <input type="text" id="t1">
+        <input type="button" id="" value="GO"  onclick="show()"/>
+      </p ></h3>
+    </head>
+  </body>
+
+    <body>
+
+    <script>
+    	function show(){
+    	var c1=document.getElementById("t1").value;    //获取文本框中的值
+    	//alert(c1);
+    	var month=c1.substring(0,2);
+    	var day=parseInt(c1.substring(2));
+    	switch(month){
+    		case "01":
+    			if(day>15){alert("玄枵")}
+    			else alert("星纪");
+    			break;
+    		case "02":
+    			if(day>08){alert("娵訾")}
+    			else alert("玄枵");
+    			break;
+    		case "03":
+    			if(day>05){alert("降娄")}
+    			else alert("娵訾");
+    			break;
+    		case "04":
+    			if(day>04){alert("大梁")}
+    			else alert("降娄");
+    			break;
+    		case "05":
+    			if(day>10){alert("实沈")}
+    			else alert("大梁");
+    			break;
+    		case "06":
+    			if(day>05){alert("鹑首")}
+    			else alert("实沈");
+    			break;
+    		case "07":
+    			if(day>07){alert("鹑火")}
+    			else alert("鹑首");
+    			break;
+    		case "08":
+    			if(day>11){alert("鹑尾")}
+    			else alert("鹑火");
+    			break;
+    		case "09":
+    			alert("寿星")
+    			break;
+    		case "10":
+    			if(day>07){alert("大火")}
+    			else alert("寿星");
+    			break;
+    		case "11":
+    			if(day>12){alert("析木")}
+    			else alert("大火");
+    			break;
+    		case "12":
+    			if(day>07){alert("星纪")}
+    			else alert("析木");
+    			break;
+    	}
+    }
+    </script>
+    </body>
+
+<body>
+<button id="button">
+    星次解读
+</button>
+
+
+<div id="block">
+<div> <p>星纪：</p>
+       作为十二星次的出发点，有根基的含义。是一个信念坚强而勤奋的人，会向着自己的目标努力不懈。而且给人十分踏实可信的印象，深得他人信赖。但一向温柔的你(你)一旦发起脾气来，也是势不可挡的。</div>
+  <p>玄枵：</p>
+    “玄枵”有种子的含义，所以有发展性和神秘感。好奇心旺盛，兴趣广泛，而且性格开朗、乐观，走到哪里都是受欢迎的人物。但同时有缺乏耐性、善变的缺点，而且对一件事物的热情不会太持久。
+  <p>娵訾：</p>
+    代表着植物的核，即事物的中心。所以是一个个性很强、强调自我的人，外表冷漠，内心却十分热情。而且具持久力，一旦决定了某件事，便会以坚强的意志坚持到底，故此经常成为团体的领导人物。不过你(你)的坚强可能会使你(你)有些自闭倾向，因此应多与周围的人交流。性格神秘莫测，爱幻想。
+  <p>降娄：</p>
+    “降娄”代表植物的茎，你像茎向植物无私地输送养分一般，你是一个为他人无私奉献的人。你性格直率，不论与同性朋友或异性朋友都能够融洽地相处。当朋友遇到困难时，你都能鼎力相助，但自己遇到麻烦时却显得束手无策。而且过于听命于上司也是不正确的态度。
+  <p>大梁：</p>
+    “大梁”象征植物过冬前积蓄能量，有结实的意思。所以“大梁”座的人多会早熟但外表幼稚，人生经验也会比较丰富，头脑灵活，对于知识或技能都能很快掌握。但由于外表稳定会令人产生痴呆的特点。而且有先见之明，对自己的未来有长远的计划，但从不按计划出牌。外表性格与内心性格大相径庭。外表简单，内心很深。
+  <p>实沈: </p>
+    “实沈”代表伸缩自如的柔软性，象征植物的枝条。所以你是一个很有韧力、善于随机应变的人。能够利用机会开拓自己的发展。但你缺乏踏实的努力，天赋是要靠真正的磨练才可以成为你的才能。性格复杂，很难猜透。
+  <p>  鹑首：</p>
+   “鹑首”象征宁静，所以“鹑首”座的你沉稳温和，总给人很有内涵而且略有神秘感的印象。外表冷漠的你(你)，会为了理想充满热情和踏实地努力。而且你具有一种超出实际年龄的包容力和涵养。但应注意在金钱方面不要过于吝啬，特别是与老朋友一起的时候。
+  <p>  鹑火：</p>
+    “鹑火”代表不死鸟的心脏，具有燃烧的生命力。所以你精力充沛、行动极快，从不会“三思而后行”。你也是个喜欢另辟新径的人，在异性面前毫不做作的性格，使你深得同性朋友的爱戴。同时你也是一位内心爱表现，爱党领袖的人物。是星次之王
+  <p>  鹑尾：</p>
+    “鹑尾”代表着坚实地生长在大地中的根，所以你的性格也会如土地中的根一样，坚强而深不可测。冷漠的外表下有一颗温柔的心，而且富有同情心。有丰富的想像力，感觉敏锐，但有时有些不切实际。
+  <p>  寿星：</p>
+    如字面所示，“寿星”座的人拥有福寿。表面上看来你是个懒惰之人，但一旦有了目标，你便会充满热情地开始实干，所谓“不鸣则已，一鸣惊人”。但你的热情难以持久。此外你也不喜欢团体活动。
+  <p>  大火：</p>
+    “大火”代表早晨温暖的阳光，所以你给别人的感觉也十分温暖，因为你的安宁恬静所以深得大家喜爱。而且你是个重视家庭及爱护家人的人，不过温顺的性格却又使你具有优柔寡断的缺点。而且外在的温和下面是内心的激进与大脾气。所以要时常注意。性格极度复杂，沉浮很深。
+<p>  析木：</p>
+    “析木”代表拦截天河的木栅。现实生活中最大的特点便是意志坚强，不论遇到任何逆境都能充满勇气地跨过。
+</div>
+    <script>
+    // 获取元素的id
+          var showbutton = document.getElementById("button");
+          var showblock = document.getElementById("block");
+    // 改变元素的display的值
+          showbutton.onclick=function(){
+            if(showblock.style.display=="none"){
+                showblock.style.display="block";
+            }else{
+                showblock.style.display="none";
+            }
+          }
+
+    </script>
+  </body>
+</html>
