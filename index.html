@@ -1,0 +1,1695 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--xmlns是一个命名空间，类似于URL属性，浏览器会用这个命名空间来识别html格式的文件-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <!-- Basic Page Needs -->
+
+<!--提供页面被添加到收藏夹时的标题、提供显示在搜索引擎结果中的页面标题-->
+  <title>Wedo - Personal Portfolio HTML Template</title>
+<!--任何IE版本都以当前支持的最高模式渲染，也就是浏览器版本自适应-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge，chrome=1" />
+
+  <!-- rel 关联 stylesheet样式表  使用link标签引入外部链接，是引入CSS的三种方法之一，href是引用。-->
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <!-- min是是bootstrap.css的压缩版，这一步部署安装Bootstrap来支持响应式布局 -->
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+  <!-- 让网页宽度自适应手机屏幕宽度 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+  <!-- 引入一些字体格式的设置 -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/shortcodes.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
+  <!-- 设置浏览器页签图标 ，同时特别为苹果浏览器设置一条 -->
+  <link rel="shortcut icon" href="images/logo.png">
+  <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+
+  <!-- Animation Text CSS动画 -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/splt.css" />
+
+  <!-- Responsive -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+
+
+<link rel="stylesheet" href="stylesheets/chatstyle.css">
+
+  <!-- Colors -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
+
+    <!-- ios support      apple-touch-icon是IOS设备的私有标签，如果设置了相应apple-touch-icon标签，则添加到主屏上的图标会使用指定的图片。 -->
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <!--作用是控制苹果safari状态栏显示样式，改变顶部状态条的颜色 ，默认值是白色-->
+  <meta name="apple-mobile-web-app-status-bar" content="#B4D700">
+  <meta name="theme-color" content="#B4D700">
+  <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<!--创建具有全屏幕展示效果的网页，并且采用亮色调主题。-->
+<body class="tf-fullscreen is-light">
+
+    <!-- preloaded，预加载器，这个与加载器会通过JS来设置外观，并在加载完成后用JS抹除，应该就是那条白线。 -->
+    <div id="preloader">
+      <div class="preload-container"></div>
+    </div>
+    <!-- /preload -->
+
+<!-- Header -->
+  <!--  id="header" 给这个头部定义了一个唯一的标识符，可以通过该标识符在 CSS 或 JavaScript 中定位和操作这个头部元素。 -->
+    <header id="header" class="header header-fixed">
+    <div class="tf-container">
+      <div class="row is-relative">
+        <div class="col-4">
+          <a href="index.html" class="logo">
+            <img id="logo_header" src="images/logo.png" alt="image">
+            <img id="logo_header-2" src="images/logo-dark.png" alt="images">
+          </a>
+        </div>
+        <div class="col-8">
+          <div class="inner-header">
+            <div class="inner-header-left">
+              <h3><a href="index.html">HOME</a></h3>
+              <h3><a href="#contact" class="type-2 wedo-link-item">Contact ME</a> <span class="flicker">!</span></h3>
+            </div>
+
+            <div class="inner-header-right">
+
+<!-- 隐藏智能体形象，目前只有图标，该怎么召唤后面再说-->
+<div class="bottom">
+<button class="wd-icon-box" id="summon-assistant">
+<svg t="1718167502279" class="icon" width="25" height="25" fill="#9eb42c" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4795" width="200" height="200">
+<path d="M884.992 38.4c68.6336 0 124.288 52.992 124.288 118.4V709.376c0 65.3824-55.6544 118.4-124.3136 118.4h-236.1344l-238.208 151.2448a43.2128 43.2128 0 0 1-39.3984 3.3536 39.8592 39.8592 0 0 1-24.3968-29.6448l-0.5888-6.5536v-118.4H139.008c-64.0256 0-117.6064-46.336-123.7504-107.0336l-0.5632-11.3664V156.8C14.72 91.4176 70.3744 38.4 139.008 38.4h745.9328z m7.6288 75.264H131.3792c-23.3472 0-42.2912 17.9712-42.2912 40.1408v562.0992c0 22.1696 18.944 40.1664 42.2912 40.1664h253.7472c23.3472 0 42.2912 17.9712 42.2912 40.1408v85.4272l188.032-118.8352c4.608-2.9184 9.7792-4.9152 15.232-5.9392l8.192-0.7936h253.7472c23.3472 0 42.2912-17.9968 42.2912-40.1664V153.8048c0-22.1696-18.944-40.1664-42.2912-40.1664z" p-id="4796"></path>
+<path d="M309.5552 628.7104c19.9168 0 30.976-10.24 38.7328-36.2496l21.0176-64.1792h132.5312l21.2992 64.1792c7.4752 25.728 19.072 36.2496 39.2704 36.2496 21.3248 0 35.4304-12.7232 35.4304-32.64 0-7.7568-1.9456-16.896-5.8112-28.7744l-95.1808-272.7936c-11.904-35.4048-28.4928-49.792-59.7504-49.792-31.5392 0-48.4096 14.6688-60.3136 49.792L281.6 567.296c-4.6848 14.08-6.6304 22.6816-6.6304 30.1568 0 18.7904 14.1056 31.232 34.56 31.232z m76.3648-156.032l48.128-152.7296h3.584l47.872 152.7296h-99.584zM688.5632 628.1472c23.5264 0 37.0688-14.9248 37.0688-40.3968V285.3632c0-25.4464-13.824-40.3712-37.3248-40.3712-23.808 0-37.376 14.9248-37.376 40.3712V587.776c0 25.472 13.824 40.3968 37.632 40.3968z" p-id="4797"></path>
+</svg>
+</button>
+</div>
+
+<div id="ai-assistant-message" class="tf-mouse-message">智能助手已激活！</div>
+
+
+              <div class="choose-themes day">
+                <div class="sun moon">
+                </div>
+              </div>
+
+              <div id="nav-filter" class="wd-icon-box active">
+                <div class="nav-menu">
+                  <span></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- popup  目录应该是 -->
+        <div class="menu-popup">
+          <div class="modal-menu__backdrop"></div>
+          <div class="widget-filter">
+
+            <div class="menu-left">
+              <a href="index.html"><img src="images/logo-menu.png" alt="img"></a>
+              <div class="contact">
+                <div class="contact-phone">
+                  <p>Contact Phone</p>
+                  <h4>+55 (9900) 666 22</h4>
+                </div>
+                <div class="contact-mail">
+                  <p>Contact Mail</p>
+                  <h4>lajoyas@163.com</h4>
+                </div>
+              </div>
+
+            </div>
+            <div class="main-menu">
+              <p><a class="active trick" href="index.html">HOME</a></p>
+              <ul class="menu-content filter-menu">
+                <li class="home-menu"><a class="active" href="#home" data-splitting>HOME</a></li>
+                <li><a href="#about" data-splitting>关于我</a></li>
+                <li><a href="#pricing" data-splitting>价目表</a></li>
+                <li><a href="#skill" data-splitting>技能条</a></li>
+                <li><a href="#portfolio" data-splitting>平面作品</a></li>
+                <li><a href="#blog" data-splitting>视频作品</a></li>
+                <li><a href="#testimonials" data-splitting>文字作品</a></li>
+                <li><a href="#contact" data-splitting>联系我</a></li>
+              </ul>
+            </div>
+
+
+            <div class="menu-right">
+              <div class="icon-close">
+                <span data-splitting>CLOSE</span>
+                <a class="title-button-group"></a>
+              </div>
+              <div class="contact">
+                <div class="contact-phone">
+                  <p>Contact Phone</p>
+                  <h4>+55 (9900) 666 22</h4>
+                </div>
+                <div class="contact-mail">
+                  <p>Contact Mail</p>
+                  <h4>lajoyas@163.com</h4>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+</head>
+
+    </header>
+    <!-- End header 顶部固定栏到此结束-->
+
+    <!-- home -->
+    <section>
+    <div class="tf-container">
+      <div class="wrapper wrap-home" data-enter="fadeInUp" data-exit="">
+        <div class="group-4-8">
+          <div class="cl4">  <!-- 不知道什么意思，可能要查一下具体的CSS/JS代码-->
+              <!-- 也就是个人信息那一栏会在页面滚动时保持在特定位置不动-->
+            <div class="sticky-sidebar">
+                <!-- 个人头像-->
+              <div class="avatar">
+                <img src="images/avatar/avt-1.png" alt="image">
+              </div>
+  <!-- 头像下面的自我介绍-->
+  <div class="inner2 section" data-intro="这里介绍内容">
+              <div class="profile">
+                <div class="top">
+                  <h3><a href="#">我是谁？</a></h3>
+                  <div class="wrap-text">
+                    <span class="auto-type">Designer</span>
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="mail"><a href="#">Lajoyas@163.com</a></p>
+                  <p>关于我的日常点滴</p>
+                    <div class="section" data-info="这是区块1的介绍信息"><ul class="wd-social-icon m-top">
+                      <li><a href="https://weibo.com">  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-sina-weibo" viewBox="0 0 16 16">
+    <path d="M10.878 1.093a4.23 4.23 0 0 1 4.031 1.305 4.225 4.225 0 0 1 .886 4.14v.001a.612.612 0 0 1-1.166-.377 3.01 3.01 0 0 0-3.495-3.873.611.611 0 1 1-.256-1.196Z"/>
+    <path fill-rule="evenodd" d="M3.753 9.465c.548-1.11 1.972-1.74 3.233-1.411 1.304.338 1.971 1.568 1.437 2.764-.541 1.221-2.095 1.875-3.416 1.449-1.271-.411-1.812-1.67-1.254-2.802Zm2.658.567c.16.066.365-.009.458-.168.088-.16.03-.34-.129-.397-.156-.062-.353.013-.446.168-.09.154-.041.333.117.397Zm-1.607 1.314c.413.188.963.009 1.219-.4.252-.413.12-.883-.296-1.062-.41-.172-.94.005-1.194.402-.256.4-.135.874.271 1.06Z"/>
+    <path fill-rule="evenodd" d="m12.014 7.238.005.001c.919.285 1.941.974 1.939 2.188 0 2.007-2.895 4.535-7.246 4.535C3.393 13.962 0 12.352 0 9.708c0-1.385.876-2.985 2.384-4.493C4.4 3.199 6.751 2.28 7.634 3.165c.39.392.427 1.065.177 1.87-.132.405.38.182.38.182 1.63-.682 3.051-.722 3.57.02.278.397.252.951-.004 1.594-.116.293.035.34.257.407Zm-10.4 3.101c.172 1.738 2.46 2.936 5.109 2.674 2.647-.26 4.656-1.883 4.482-3.623-.17-1.738-2.458-2.937-5.107-2.674-2.647.263-4.656 1.883-4.484 3.623Z"/>
+    <path d="M13.295 3.855a2.056 2.056 0 0 0-1.962-.634.526.526 0 1 0 .219 1.031 1.008 1.008 0 0 1 1.17 1.296.528.528 0 0 0 1.005.325 2.062 2.062 0 0 0-.432-2.018Z"/>
+  </svg></i></a></li>
+                    <li><a href=" https://v.douyin.com 1@8.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+</svg></i></a></li>
+                    <li><a href="https://www.xiaohongshu.com"><svg t="1718165567125" class="icon" width="29" height="29"   viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1786" ><path d="M19.242667 401.066667h68.053333s-7.936 113.962667-10.026667 133.973333c-2.090667 20.053333-9.6 73.898667-39.253333 108.117333L3.370667 567.594667c0 0.042667 7.936-7.509333 15.872-166.528zM133.461333 310.656h68.437334v315.008s-13.909333 49.536-52.309334 48.981333h-36.736l-29.866666-59.349333h44.074666c4.736 0 4.608-6.528 4.608-4.778667 0.042667 3.882667 1.792-299.861333 1.792-299.861333zM476.288 307.84l-34.517333 77.909333s-6.101333 15.573333 3.882666 16.128c10.026667 0.554667 57.301333 0 57.301334 0l-47.872 107.392s-4.992 13.909333 4.437333 13.909334h35.626667l-23.722667 55.637333h-78.08s-33.962667-4.992-20.053333-35.626667 34.517333-79.018667 34.517333-79.018666l-35.072 0.554666s-31.701333-6.698667-16.128-38.954666c15.573333-32.298667 54.528-117.973333 54.528-117.973334h65.152zM247.552 400.256H314.88s8.917333 162.773333 16 163.370667l-34.389333 77.610666s-31.701333-23.936-40.064-120.490666c-6.869333-79.701333-8.874667-120.490667-8.874667-120.490667zM362.752 600.576s2.218667 6.101333 27.818667 6.101333h77.909333l-31.146667 67.328H354.389333s-24.192 0.554667-23.509333-7.253333l31.872-66.176zM679.424 333.44v67.370667h-42.325333v205.909333h65.706666v67.328h-225.408l29.482667-66.773333h57.898667l1.109333-207.018667-40.618667-0.554667-1.664-66.261333z" p-id="1787" fill="#bfbfbf"></path><path d="M1024 615.04v-94.592c0-56.192-59.648-58.453333-59.648-58.453333h-17.237333V399.658667c0.554667-57.301333-68.992-66.218667-68.992-66.218667h-42.837334v-26.154667h-66.773333l1.109333 26.154667h-47.317333v66.218667h45.653333v62.890666H698.88v67.328l68.992 0.554667v143.573333h67.328V529.92h107.392c14.464 0 15.573333 14.464 15.573333 14.464s3.626667 39.381333 2.645334 56.192c-0.981333 16.682667-13.226667 15.573333-13.226667 15.573333h-55.637333l26.709333 57.898667h50.645333c59.050667 0 54.698667-59.008 54.698667-59.008z m-142.592-209.493333v55.637333H834.133333V400.512h40.362667c7.808 0 6.912 5.034667 6.912 5.034667z" p-id="1788" fill="#bfbfbf"></path><path d="M992 398.549333H960v-32c0-17.578667 14.421333-32 32-32 17.621333 0 32 14.421333 32 32s-14.378667 32-32 32z" p-id="1789" fill="#bfbfbf"></path></svg></i></a></li>
+
+                    <li><a href="https://b23.tv/6lAtWW8"><svg t="1718165827576" class="icon" width="21" height="21" fill="currentColor" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3039" ><path d="M306.005333 117.632L444.330667 256h135.296l138.368-138.325333a42.666667 42.666667 0 1 1 60.373333 60.373333l-78.037333 77.952L789.333333 256A149.333333 149.333333 0 0 1 938.666667 405.333333v341.333334a149.333333 149.333333 0 0 1-149.333334 149.333333h-554.666666A149.333333 149.333333 0 0 1 85.333333 746.666667v-341.333334A149.333333 149.333333 0 0 1 234.666667 256h88.96L245.632 177.962667a42.666667 42.666667 0 0 1 60.373333-60.373334zM789.333333 341.333333h-554.666666a64 64 0 0 0-63.701334 57.856L170.666667 405.333333v341.333334a64 64 0 0 0 57.856 63.701333L234.666667 810.666667h554.666666a64 64 0 0 0 63.701334-57.813334L853.333333 746.666667v-341.333334A64 64 0 0 0 789.333333 341.333333zM341.333333 469.333333a42.666667 42.666667 0 0 1 42.666667 42.666667v85.333333a42.666667 42.666667 0 1 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666666-42.666667z m341.333334 0a42.666667 42.666667 0 0 1 42.666666 42.666667v85.333333a42.666667 42.666667 0 1 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666667-42.666667z" p-id="3040" fill="#bfbfbf"></path></svg></i></a></li>
+                  </ul>
+                </div></div>
+
+  <!-- 在这里设置AI小助手的开关-->
+  <div class="bottom">
+      <a class="btn-profile active wedo-link-item">快来关注我!<span class="icon-arrow"></span></a>
+      <!-- <a class="btn-profile wedo-link-item" href="#contact">Download CV <span class="icon-arrow"></span></a> -->
+  </div>
+
+                <script src="javascript/point.js"></script>
+              </div>
+            </div>
+          </div>
+  </div>
+          <!-- home -->
+          <div class="cl8">
+            <div id="home" class="home-box wedo-section animated">
+              <div class="top-content">
+                <div class="wrap-title" >
+                  <div class="mt35">
+                    <div class="note">
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>There I’m</p>
+                    </div>
+                    <div class="box-title">
+                      <h2 class="title">
+                        欢迎来到我的主页！
+                      </h2>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                  <!--这里链接弹出对话框，可以和我聊天-->
+
+
+        <div class="container mt-2"><!-- 这里可以调整上放距离 -->
+          <div class="row">
+            <div class="col-12">
+              <div class="inner2 section" data-intro="这里是的介绍内容">
+                <a class="btn" data-bs-toggle="collapse" href="#chat" role="button" aria-expanded="false" aria-controls="chat">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.19795 1.2835C1.19787 1.28171 1.19791 1.27976 1.19815 1.27766L10.8503 1.27766C11.8768 1.27766 12.8001 2.22389 12.8001 3.49946V10.4984C12.8001 11.7739 11.8768 12.7202 10.8503 12.7202H5.25087C4.22438 12.7202 3.30112 11.7739 3.30112 10.4984V5.10376C3.30112 4.8874 3.23562 4.70918 3.18833 4.61365L3.17937 4.59555L3.16898 4.57823L1.20454 1.30396C1.20453 1.30394 1.20451 1.30391 1.20449 1.30388C1.19982 1.29605 1.1982 1.28919 1.19795 1.2835Z" stroke="var(--primary-bg-light)"/>
+                    </svg>
+                    Let’s Chat
+                </a>
+                </div>
+  </div>
+
+                 <div class="col-12 mt-2"> <!-- 这里可以调整下方距离 -->
+                  <div class="collapse" id="chat" >
+                      <div class="card card-body" >
+                          <div id="chatbox"></div>
+                          <div id="input-area">
+                            <input type="text" id="user-input" name="user-input" placeholder="你想问些什么？" onkeypress="checkEnter(event)" />
+                              <button onclick="sendMessage()">Send</button>
+                          </div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+        </div>
+
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+              <script src="javascript/chatscript.js"></script>
+
+  <!-- 各区域
+自我介绍，设计作品，世界观文字作品，短视频，AI交互，技能条，社交媒体账号跳转-->
+<div class="container mt-5">
+    <div class="content-2">
+        <div class="content-left">
+            <div class="ct-top">
+                <div class="inner1 section" data-intro="这里是AI探索的介绍内容">
+                    <a href="#" class="img-about wedo-link-item"><img src="images/home/img-1.png" alt="image"></a><h4>AI探索</h4>
+                </div>
+                <div class="inner2 section" data-intro="这里是关于我的介绍内容">
+                    <a href="#about" class="img-about wedo-link-item"><img src="images/home/img-2.png" alt="image"> <h4>关于我</h4></a>
+                </div>
+            </div>
+
+            <div class="ct-middle wow fadeInUp">
+                <div class="inner1 section" data-intro="这里是平面作品的介绍内容">
+                    <a href="#portfolio" class="img-portfolio wedo-link-item"><img src="images/home/img-3.png" alt="image"><h4><span>平面</span><br>作品<span></span></h4></a>
+                </div>
+                <div class="inner2 section" data-intro="这里是外媒链接的介绍内容">
+                    <a href="ins" class="img-1"><img src="images/home/img-5.png" alt="image"> </a>
+                    <a href="推特" class="img-1"><img src="images/home/img-4.png" alt="image"> </a>
+                    <a href="pixiv"><img src="images/home/img-6.png" alt="image"> </a>
+                </div>
+            </div>
+            <div class="ct-bottom">
+                <div class="inner1 section" data-intro="这里是价格的介绍内容">
+                    <a href="#pricing"><img src="images/home/img-11.png" alt="image"></a>
+                </div>
+                <div class="inner2 section" data-intro="这里是文字作品的介绍内容">
+                    <a href="#testimonials" class="wedo-link-item"><h4>文字</h4><p>作品</p></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-right">
+            <div class="inner st2 section" data-intro="这里是PPT作品的介绍内容">
+                <a href="#" class="img-portfolio wedo-link-item"><img src="images/home/img-7.png" alt="image"><h4><span>PPT</span><br>作品<span></span></h4></a>
+            </div>
+
+            <div class="inner st2 section" data-intro="这里是技能进度条的介绍内容">
+                <a href="#skill" class="wedo-link-item"><img src="images/home/img-8.png" alt="image"><h4><span>人生</span><br><span>进度条</span></h4></a>
+            </div>
+
+            <div class="inner st3 section" data-intro="这里是视频作品的介绍内容">
+                <a href="#blog" class="wedo-link-item"><img src="images/home/img-9.png" alt="image"><h4>视频作品</h4></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+          <!-- 各区域划分end -->
+
+    <!-- 具体页面 -->
+          <!-- about us 页面-->
+          <div class="cl8">
+              <div class="wedo-section" id="about" >
+                <div class="about-wrap">
+                <div class="top-content">
+                <div class="wrap-title st-about">
+                  <div>
+                  <div class="note">
+                    <span class="icon-user icon"></span>
+                    <span>Hi!</span>
+                    &ensp;
+                    <p>关于我</p>
+                  </div>
+                  <h1 class="title">
+                    关于我<span>!</span>
+                  </h1>
+                </div>
+                  <div class="box-title">
+
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+
+
+                </div>
+                <p class="mb15">
+                  Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra
+                  mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis. Nullam tincidunt finibus
+                  pretium. auctor vitae nulla a tristique. Vestibulum viverra ipsum.
+                </p>
+                <p>Integer non sapien justo. Fusce feugiat viverra tellus, eu interdum enim varius nec. Etiam laoreet
+                  augue mauris, sit amet convallis nibh congue id. Fusce justo leo, imperdiet a massa id, lacinia mollis
+                  diam. Vestibulum commodo euismod mauris. Suspendisse accumsan volutpat nibh at dictum. Cras
+                  condimentum leo justo, ut venenatis mauris tempor.</p>
+                </div>
+                <div class="content">
+
+                    <div class="inner-top">
+                      <div class="content-left br-left">
+                        <h4>Name</h4>
+                        <p>Donald L. Juarez</p>
+                      </div>
+                      <div class="content-right">
+                        <h4>Phone</h4>
+                        <p>+99 (555) 666 88 55</p>
+                      </div>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="content-left br-left br-bottom">
+                        <h4>Office</h4>
+                        <p>1247/Plot No. 39, New York.</p>
+                      </div>
+                      <div class="content-right br-bottom">
+                        <h4>Experience</h4>
+                        <p>12 Years</p>
+                      </div>
+                    </div>
+                </div>
+
+
+                </div>
+
+                <div class="resume-wrap">
+                <div class="wrap-title">
+                  <div class="note">
+                    <span class="icon-user icon"></span>
+                    <span>Hi!</span>
+                    &ensp;
+                    <p>Our RESUME</p>
+                  </div>
+                  <div class="box-title">
+                    <h1 class="title">
+                      Resume Me<span>!</span>
+                    </h1>
+
+                  </div>
+
+                  <p>
+                    Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra
+                    mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.
+                  </p>
+
+                </div>
+                <div class="row" >
+                  <div class="col-lg-12">
+                    <div class="tf-box-resume animate-down" >
+                      <ul class="inner-left">
+                        <li>University of Pennsylvania</li>
+                        <li>2016</li>
+                      </ul>
+                      <h4 class="inner-right"><a href="#"> Bachelor Degree Of Design</a></h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="tf-box-resume animate-down" >
+                      <ul class="inner-left">
+                        <li>Princeton University</li>
+                        <li>2018</li>
+                      </ul>
+                      <h4 class="inner-right"><a href="#"> Certificate of web Development training</a></h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="tf-box-resume animate-down">
+                      <ul class="inner-left">
+                        <li>Defodil University</li>
+                        <li>2020</li>
+                      </ul>
+                      <h4 class="inner-right"><a href="#"> Certificate of UX/UI training</a></h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="tf-box-resume animate-down">
+                      <ul class="inner-left">
+                        <li>Startart University</li>
+                        <li><span>(Running)</span> 2023</li>
+                      </ul>
+                      <h4 class="inner-right"><a href="#"> Certificate of Java training</a></h4>
+                    </div>
+                  </div>
+                </div>
+
+                </div>
+
+                <div class="banner-light">
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-9.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="95"></a><span>% Figma</span></h4>
+                  </div>
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-8.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="65"></a><span>% Bootstrap</span></h4>
+                  </div>
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-2.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="85"></a><span>% Sketch</span></h4>
+                  </div>
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-7.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="90"></a><span>% XD</span></h4>
+                  </div>
+                </div>
+                <div class="banner banner-dark">
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-9.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="95"></a><span>% Figma</span></h4>
+                  </div>
+                    <div class="item wrap-counter">
+                    <img src="images/service/img-8.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="65"></a><span>% Bootstrap</span></h4>
+                  </div>
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-2.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="85"></a><span>% Sketch</span></h4>
+                  </div>
+                  <div class="item wrap-counter">
+                    <img src="images/service/img-7.png" alt="image">
+                    <h4><a href="#" class="counter-number" data-speed="5000" data-to="90"></a><span>% XD</span></h4>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- end -->
+
+
+          <!-- price-table -->
+          <div class="cl8">
+            <div class="pricing-wrap wedo-section" id="pricing">
+              <div class="top-content">
+                <div class="wrap-title">
+                  <div>
+                    <div class="note">
+                      <span class="icon-vector-4 icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>Price Table</p>
+                    </div>
+                    <h1 class="title">
+                      Price Table<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title">
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+
+
+                </div>
+                <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae
+                  enim viverra mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+              </div>
+
+              <div class="group-col-2 content">
+                <div class="cl2">
+                  <div class="box-pricing">
+                    <div class="archive-top">
+                      <div class="inner-left">
+                        <p>0.99<span>m</span></p>
+                        <h4><a href="#"> Regular Plan</a></h4>
+                        <div class="icon">
+                          <span class="icon-vector-3 icon"></span>
+                        </div>
+                      </div>
+                      <ul class="inner-right list-desc">
+                        <li>1K Followers</li>
+                        <li>20M Ops/Month</li>
+                        <li>Email Support </li>
+                        <li class="bland">30 Days Analytics</li>
+                        <li class="bland">Free Email</li>
+                        <li class="bland">Free Domain</li>
+                        <li class="bland">Free Bandwidth</li>
+                      </ul>
+                    </div>
+                    <div class="archive-bottom">
+                        <p>Start 1 Month free Trial<span class="icon-arrow"></span></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- box 2 -->
+                <div class="cl2">
+                  <div class="box-pricing">
+                    <div class="archive-top">
+                      <div class="inner-left">
+                        <p>0.99<span>m</span></p>
+                        <h4><a href="#">Sliver Plan</a></h4>
+                        <div class="icon">
+                          <span class="icon-dollar icon"></span>
+                        </div>
+                      </div>
+                      <ul class="inner-right list-desc">
+                        <li>1K Followers</li>
+                        <li>20M Ops/Month</li>
+                        <li>Email Support </li>
+                        <li class="bland">30 Days Analytics</li>
+                        <li class="bland">Free Email</li>
+                        <li class="bland">Free Domain</li>
+                        <li class="bland">Free Bandwidth</li>
+                      </ul>
+                    </div>
+                    <div class="archive-bottom">
+                        <p>Start 1 Month free Trial<span class="icon-arrow"></span></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 3 -->
+                <div class="cl2">
+                  <div class="box-pricing cart">
+                    <div class="archive-top">
+                      <div class="inner-left">
+                        <p>0.99<span>m</span></p>
+                        <h4><a href="#">Gold Plan</a></h4>
+                        <div class="icon">
+                          <span class="icon-vector-4 icon"></span>
+                        </div>
+                      </div>
+                      <ul class="inner-right list-desc">
+                        <li>1K Followers</li>
+                        <li>20M Ops/Month</li>
+                        <li>Email Support </li>
+                        <li class="bland">30 Days Analytics</li>
+                        <li class="bland">Free Email</li>
+                        <li class="bland">Free Domain</li>
+                        <li class="bland">Free Bandwidth</li>
+                      </ul>
+                    </div>
+                    <div class="archive-bottom">
+                        <p>Start 1 Month free Trial<span class="icon-arrow"></span></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 4 -->
+                <div class="cl2">
+                  <div class="box-pricing">
+                    <div class="archive-top">
+                      <div class="inner-left">
+                        <p>0.99<span>m</span></p>
+                        <h4><a href="#">Multi Plan</a></h4>
+                        <div class="icon">
+                          <span class="icon-vector-2 icon"></span>
+                        </div>
+                      </div>
+                      <ul class="inner-right list-desc">
+                        <li>1K Followers</li>
+                        <li>20M Ops/Month</li>
+                        <li>Email Support </li>
+                        <li class="bland">30 Days Analytics</li>
+                        <li class="bland">Free Email</li>
+                        <li class="bland">Free Domain</li>
+                        <li class="bland">Free Bandwidth</li>
+                      </ul>
+                    </div>
+                    <div class="archive-bottom">
+                        <p>Start 1 Month free Trial<span class="icon-arrow"></span></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- skill -->
+
+          <div class="cl8">
+            <div class="skill-wrap wedo-section wedo-section-skill" id="skill">
+              <div class="top-content">
+                <div class="wrap-title">
+                  <div>
+                    <div class="note">
+                      <span class="icon-icon-6 icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>Our Skill</p>
+                    </div>
+                    <h1 class="title">
+                      The skills I have so far and the market for my skills<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title">
+
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+
+
+                </div>
+                <p>
+                  Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.Integer non sapien justo. Fusce feugiat viverra tellus, eu interdum enim varius nec. Etiam laoreet augue mauris, sit amet convallis nibh congue id. Fusce justo leo, imperdiet a massa id, lacinia mollis diam. Vestibulum commodo euismod mauris. Suspendisse accumsan volutpat nibh at dictum. Cras condimentum leo justo, ut venenatis mauris tempor.
+                </p>
+              </div>
+
+                <div class="tf-skill-bar tf-progress-bar">
+                    <div class="progress-item ">
+                        <h4>技能1</h4>
+                        <div class="inner-skill">
+                              <div class="progress-animate" data-valuemax="100" data-valuemin="0" data-valuenow="70"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item ">
+                        <h4>技能2</h4>
+                        <div class="inner-skill">
+                          <div class="progress-animate" data-valuemax="100" data-valuemin="0" data-valuenow="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <h4>技能3</h4>
+                        <div class="inner-skill">
+                          <div class="progress-animate" data-valuemax="100" data-valuemin="0" data-valuenow="73"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <h4>技能4</h4>
+                        <div class="inner-skill">
+                          <div class="progress-animate" data-valuemax="100" data-valuemin="0" data-valuenow="60"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <h4>技能5</h4>
+                        <div class="inner-skill">
+                          <div class="progress-animate" data-valuemax="100" data-valuemin="0" data-valuenow="70"></div>
+                        </div>
+                    </div>
+
+
+                  <div class="themesflat-progress style-1 height-10px clearfix">
+                      <h3 class="title"></h3>
+                      <div class="perc-wrap">
+                          <div class="perc"><span>70%</span></div>
+                      </div>
+                      <div class="progress-bg" data-percent="70" data-inviewport="yes">
+                          <div class="progress-animate"></div>
+                      </div>
+                  </div>
+
+                </div>
+
+            </div>
+          </div>
+          <!-- 平面作品-->
+          <div class="cl8">
+            <div class="portfolio-wrap wedo-section" id="portfolio">
+              <div class="top-content">
+                <div class="wrap-title">
+                  <div>
+                    <div class="note">
+                      <span class="icon-icon-7 icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p></p>
+                    </div>
+                    <h1 class="title">
+                      平面作品合集<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title">
+
+                    <div class="circle-box st-port">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+
+                </div>
+                <p class="des-portfolio"><span></span>画画，一辈子也学不完</p>
+              </div>
+              <div class="group-col-2 content">
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-1.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>原创故事</p>
+                      <h4><a href="#portfolio-v1" class="wedo-link-item">讲述原创卡司的宇宙
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v1" class="wedo-link-item wrap-link"></a>
+                  </div>
+                </div>
+                <!-- box 2 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-2.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>ACG同人作品</p>
+                      <h4><a href="#portfolio-v2" class="wedo-link-item">延续原作的花火
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v2" class="wedo-link-item wrap-link"></a>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 3 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-4.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>个人设计</p>
+                      <h4><a href="#portfolio-v1" class="wedo-link-item">创造力是一种习惯
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v1" class="wedo-link-item wrap-link"></a>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 4 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-5.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>日常速写</p>
+                      <h4><a href="#portfolio-v2" class="wedo-link-item">一旦开始就不要停歇
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v2" class="wedo-link-item"></a>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 5 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-5.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>摄影作品</p>
+                      <h4><a href="#portfolio-v1" class="wedo-link-item">在真实世界里
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v1" class="wedo-link-item"></a>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 6 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-1.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>合集</p>
+                      <h4><a href="#portfolio-v2" class="wedo-link-item">开花结果
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v2" class="wedo-link-item"></a>
+
+                  </div>
+                </div>
+                <!-- end -->
+
+              </div>
+              <!-- widget link -->
+              <ul class="tf-pagination st1">
+                <li class="current"><a href="#"><i class="icon-arrow-thin-left"></i></a></li>
+                <li><a href="#">01</a></li>
+                <li><a href="#">02</a></li>
+                <li><a href="#">03</a></li>
+                <li class="current"><a href="#"><i class="icon-arrow-thin-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- portfolio single V1 -->
+          <div class="cl8">
+            <div class="portfolio-wrap wedo-section" id="portfolio-v1">
+              <div class="top-content">
+                <div class="wrap-title st-po-details">
+                  <div class="note">
+                    <span class="icon-icon-7 icon"></span>
+                    <span>Hi!</span>
+                    &ensp;
+                    <p>作品阐述1</p>
+                  </div>
+                  <h1 class="title">Portfolio Details<span>.</span></h1>
+                  <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra
+                    mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+                </div>
+              </div>
+              <div class="image">
+                <img src="images/blog/blog-3.jpg" alt="images">
+              </div>
+
+              <div class="content">
+                <h3>Software License Management</h3>
+                <p>Mauris ultricies orci in sodales molestie. Nullam et vehicula lacus, euismod gravida tortor. Morbi
+                  ipsum lectus, viverra id vulputate eget, molestie non nunc. Donec mollis accumsan risus, at vestibulum
+                  tortor commodo at. Cras vulputate nisi in consectetur sollicitudin. Vestibulum ut vestibulum justo.
+                  Fusce fringilla ullamcorper elit, a bibendum orci blandit non. Integer porta, nunc ut ornare auctor,
+                  mauris nulla blandit ipsum, a facilisis tortor nisi eget ex.
+                </p>
+                <p>Proin finibus imperdiet nulla, quis euismod nunc gravida eget. Vestibulum iaculis nibh facilisis
+                  felis iaculis vestibulum. Curabitur purus nulla, bibendum vitae varius pulvinar, molestie in massa.
+                  Quisque ut venenatis nunc, vitae rutrum libero. Duis eget consectetur urna. Ut ut aliquet magna.
+                  Nullam augue nulla, fermentum vel elit eu, posuere vehicula tellus. Orci varius natoque penatibus et
+                  magnis dis parturient montes, nascetur ridiculus mus.</p>
+              </div>
+              <div class="image-box">
+                <img src="images/blog/blog-10.jpg" alt="image">
+                <div class="content-right">
+                  <p>Phasellus dignissim arcu sit amet augue mattis, eget rutrum ex finibus. Morbi blandit luctus nisi, id ornare sem blandit sed. In sed luctus dolor. Integer vitae pretium nunc. Aliquam rutrum lectus.</p>
+                  <ul class="tf-list-price">
+                    <li><i class="icon-checkmark"></i>One-time security check fee: $99.95</li>
+                    <li><i class="icon-checkmark"></i>Elite membership fee: $999.95 per month</li>
+                    <li><i class="icon-checkmark"></i>Coast to domestic flights: from $3,799.95</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="wd-link-blog">
+                <div class="prev-blog">
+                  <a href="#" class="icon-arrow-thin-left"></a>
+                  <div>
+                    <p>Prev Blog</p>
+                    <h3>Cloud Services</h3>
+                  </div>
+
+                </div>
+                <div class="next-blog">
+                  <div>
+                    <p>Next Blog</p>
+                    <h3>IT Consultancy</h3>
+                  </div>
+                  <a href="#" class="icon-arrow-thin-right active"></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- portfolio single V2 -->
+          <div class="cl8">
+            <div class="portfolio-wrap wedo-section" id="portfolio-v2">
+              <div class="top-content">
+                <div class="wrap-title st-po-details">
+                  <div class="note">
+                    <span class="icon-icon-7 icon"></span>
+                    <span>Hi!</span>
+                    &ensp;
+                    <p>作品阐述2</p>
+                  </div>
+                  <h1 class="title">Portfolio Details<span>.</span></h1>
+                  <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra
+                    mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+                </div>
+              </div>
+              <div class="group-desc-user">
+                <div class="desc-title">
+                  <ul class="inner-desc">
+                    <li>Category:&emsp; <span>Charity, Food</span></li>
+                    <li>Start Date:&ensp; <span> 05 December, 2023</span></li>
+                  </ul>
+                  <ul class="inner-desc">
+                    <li>Client:&emsp;&ensp; <span> Figma</span></li>
+                    <li class="active">Handover:&ensp; <span> 09 December, 2023</span></li>
+                  </ul>
+                </div>
+                <div class="image">
+                  <img src="images/blog/blog-4.jpg" alt="images">
+                </div>
+              </div>
+
+              <div class="content">
+                <h3>Software License Management</h3>
+                <p>Mauris ultricies orci in sodales molestie. Nullam et vehicula lacus, euismod gravida tortor. Morbi
+                  ipsum lectus, viverra id vulputate eget, molestie non nunc. Donec mollis accumsan risus, at vestibulum
+                  tortor commodo at. Cras vulputate nisi in consectetur sollicitudin. Vestibulum ut vestibulum justo.
+                  Fusce fringilla ullamcorper elit, a bibendum orci blandit non. Integer porta, nunc ut ornare auctor,
+                  mauris nulla blandit ipsum, a facilisis tortor nisi eget ex.
+                </p>
+              </div>
+              <ul class="tf-list">
+                <li>+ Brand Development</li>
+                <li>+ UX/UI Design</li>
+                <li>+ Front-end Development</li>
+                <li>+ Copywriting</li>
+                <li>+ Shopify Development</li>
+              </ul>
+              <div class="image">
+                <img src="images/blog/blog-7.jpg" alt="avatar">
+              </div>
+              <p>Proin finibus imperdiet nulla, quis euismod nunc gravida eget. Vestibulum iaculis nibh facilisis felis
+                iaculis vestibulum. Curabitur purus nulla, bibendum vitae varius pulvinar.
+              </p>
+              <div class="group-img">
+                <div class="inner-img">
+                  <img src="images/blog/blog-8.jpg" alt="image">
+                </div>
+                <div class="inner-img">
+                  <img src="images/blog/blog-9.jpg" alt="image">
+
+                </div>
+              </div>
+              <p class="last-text">
+                Proin finibus imperdiet nulla, quis euismod nunc gravida eget. Vestibulum iaculis nibh facilisis felis iaculis vestibulum. Curabitur purus nulla, bibendum vitae varius pulvinar, molestie in massa. Quisque ut venenatis nunc, vitae rutrum libero. Duis eget consectetur urna. Ut ut aliquet magna. Nullam augue nulla, fermentum vel elit eu, posuere vehicula tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </p>
+              <div class="wd-link-blog">
+                <div class="prev-blog">
+                  <a href="#" class="icon-arrow-thin-left"></a>
+                  <div>
+                    <p>Prev Blog</p>
+                    <h3>Cloud Services</h3>
+                  </div>
+
+                </div>
+                <div class="next-blog">
+                  <div>
+                    <p>Next Blog</p>
+                    <h3>IT Consultancy</h3>
+                  </div>
+                  <a href="#" class="icon-arrow-thin-right active"></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- blog -->
+          <div class="cl8">
+            <div class="contact-wrap wedo-section" id="blog">
+              <div class="top-content">
+                <div class="wrap-title st-blog">
+                  <div>
+                    <div class="note">
+                      <span class="icon-icon-9 icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>Vlogs & Videos</p>
+                    </div>
+                    <h1 class="title">
+                      最新视频作品<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title ">
+
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+
+
+                </div>
+                <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae
+                  enim viverra mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+              </div>
+              <div class="group-col-2 content">
+                <div class="cl2">
+                  <div class="box-latest">
+                    <div class="img-latest">
+                      <img src="images/blog/blog-1.jpg" alt="image">
+                    </div>
+                    <div class="inner-top">
+                        <h3><a href="#blog-details" class="wedo-link-item">
+                          Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.
+                        </a></h3>
+                        <a href="#" class="date-post">
+                          <span class="icon-calendar"></span>
+                          <span>03/ 01/ 2023</span>
+                        </a>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                            <div class="author">
+                              <span>By-</span>
+                              <span>Wedo</span>
+                            </div>
+
+                          </div>
+                          <ul class="view">
+                            <li><i class="icon-cmt"></i>&ensp; 23</li>
+                            <li><i class="icon-view"></i>&ensp; 503</li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </div>
+                    <a href="#blog-details" class="wedo-link-item wrap-link"></a>
+                  </div>
+                </div>
+                <!-- box 2 -->
+                <div class="cl2">
+                  <div class="box-latest">
+                    <div class="img-latest">
+                      <img src="images/blog/blog-2.jpg" alt="image">
+                    </div>
+                    <div class="inner-top">
+                        <h3><a href="#blog-details" class="wedo-link-item">
+                          Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.
+                        </a></h3>
+                        <a href="#" class="date-post">
+                          <span class="icon-calendar"></span>
+                          <span>03/ 01/ 2023</span>
+                        </a>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                            <div class="author">
+                              <span>By-</span>
+                              <span>Wedo</span>
+                            </div>
+                          </div>
+                          <ul class="view">
+                            <li><i class="icon-cmt"></i>&ensp; 23</li>
+                            <li><i class="icon-view"></i>&ensp; 503</li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </div>
+                    <a href="#blog-details" class="wedo-link-item wrap-link"></a>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 3 -->
+                <div class="cl2">
+                  <div class="box-latest">
+                    <div class="img-latest">
+                      <img src="images/blog/blog-11.jpg" alt="image">
+                    </div>
+                    <div class="inner-top">
+                        <h3><a href="#blog-details" class="wedo-link-item">
+                          Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.
+                        </a></h3>
+                        <a href="#" class="date-post">
+                          <span class="icon-calendar"></span>
+                          <span>03/ 01/ 2023</span>
+                        </a>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                            <div class="author">
+                              <span>By-</span>
+                              <span>Wedo</span>
+                            </div>
+                          </div>
+                          <ul class="view">
+                            <li><i class="icon-cmt"></i>&ensp; 23</li>
+                            <li><i class="icon-view"></i>&ensp; 503</li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </div>
+                    <a href="#blog-details" class="wedo-link-item wrap-link"></a>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 4 -->
+                <div class="cl2">
+                  <div class="box-latest">
+                    <div class="img-latest">
+                      <img src="images/blog/blog-12.jpg" alt="image">
+                    </div>
+                    <div class="inner-top">
+                        <h3><a href="#blog-details" class="wedo-link-item">
+                          Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.
+                        </a></h3>
+                        <a href="#" class="date-post">
+                          <span class="icon-calendar"></span>
+                          <span>03/ 01/ 2023</span>
+                        </a>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                            <div class="author">
+                              <span>By-</span>
+                              <span>Wedo</span>
+                            </div>
+                          </div>
+                          <ul class="view">
+                            <li><i class="icon-cmt"></i>&ensp; 23</li>
+                            <li><i class="icon-view"></i>&ensp; 503</li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </div>
+                    <a href="#blog-details" class="wedo-link-item wrap-link"></a>
+
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 5 -->
+                <div class="cl2">
+                  <div class="box-latest">
+                    <div class="img-latest">
+                      <img src="images/blog/blog-5.jpg" alt="image">
+                    </div>
+                    <div class="inner-top">
+                        <h3><a href="#blog-details" class="wedo-link-item">
+                          Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.
+                        </a></h3>
+                        <a href="#" class="date-post">
+                          <span class="icon-calendar"></span>
+                          <span>03/ 01/ 2023</span>
+                        </a>
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                            <div class="author">
+                              <span>By-</span>
+                              <span>Wedo</span>
+                            </div>
+                          </div>
+                          <ul class="view">
+                            <li><i class="icon-cmt"></i>&ensp; 23</li>
+                            <li><i class="icon-view"></i>&ensp; 503</li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </div>
+                    <a href="#blog-details" class="wedo-link-item wrap-link"></a>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 6 -->
+                <div class="cl2">
+                  <div class="box-latest">
+                    <div class="img-latest">
+                      <img src="images/blog/blog-13.jpg" alt="image">
+                    </div>
+                    <div class="inner-top">
+
+                        <h3><a href="#blog-details" class="wedo-link-item ">
+                          Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.
+                        </a></h3>
+                        <a href="#" class="date-post">
+                          <span class="icon-calendar"></span>
+                          <span>03/ 01/ 2023</span>
+                        </a>
+
+
+                    </div>
+                    <div class="inner-bottom">
+                      <div class="post">
+                        <div class="user-post">
+                          <div class="thumb">
+                            <img src="images/avatar/avt-2.jpg" alt="image">
+                            <div class="author">
+                              <span>By-</span>
+                              <span>Wedo</span>
+                            </div>
+                          </div>
+                          <ul class="view">
+                            <li><i class="icon-cmt"></i>&ensp; 23</li>
+                            <li><i class="icon-view"></i>&ensp; 503</li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </div>
+                    <a href="#blog-details" class="wedo-link-item wrap-link"></a>
+                  </div>
+                </div>
+                <!-- end -->
+              </div>
+              <!-- widget link -->
+
+                <ul class="tf-pagination">
+                  <li><a href="#"><i class="icon-arrow-thin-left"></i></a></li>
+                  <li><a href="#">01</a></li>
+                  <li class="current"><a href="#">02</a></li>
+                  <li><a href="#">03</a></li>
+                  <li class="current"><a href="#"><i class="icon-arrow-thin-right"></i></a></li>
+                </ul>
+
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- 视频二级页面 -->
+          <div class="cl8">
+            <div class="blog-wrap wedo-section" id="blog-details">
+              <div class="top-content">
+                <div class="wrap-title st-blog-details">
+                  <div class="note">
+                    <span class="icon-icon-9 icon"></span>
+                    <span>Hi!</span>
+                    &ensp;
+                    <p>视频1阐述</p>
+                  </div>
+                  <h1 class="title">Blog Details<span>.</span>
+                  </h1>
+                  <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra
+                    mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+                </div>
+              </div>
+              <div class="image">
+                <img src="images/blog/blog-6.jpg" alt="images">
+              </div>
+              <div class="content">
+                <div class="post">
+                  <div class="user-post">
+                    <div class="thumb">
+                      <img src="images/avatar/avt-2.jpg" alt="image">
+                      <div class="author">
+                        <span>By-</span>
+                        <span>Wedo</span>
+                      </div>
+                    </div>
+                    <ul class="view">
+                      <li><i class="icon-cmt"></i>&ensp; 23</li>
+                      <li><i class="icon-view"></i>&ensp; 503</li>
+                    </ul>
+                  </div>
+                  <a href="#" class="date-post">
+                    <span class="icon-calendar"></span>
+                    <span>03/ 01/ 2023</span>
+                  </a>
+                </div>
+                <h3>Nam ultricies sed leol eget vehic. Sediur varius nonito magnia quis matks. Intei finibus.</h3>
+                <p>Mauris ultricies orci in sodales molestie. Nullam et vehicula lacus, euismod gravida tortor. Morbi
+                  ipsum lectus, viverra id vulputate eget, molestie non nunc. Donec mollis accumsan risus, at vestibulum
+                  tortor commodo at. Cras vulputate nisi in consectetur sollicitudin. Vestibulum ut vestibulum justo.
+                  Fusce fringilla ullamcorper elit, a bibendum orci blandit non. Integer porta, nunc ut ornare auctor,
+                  mauris nulla blandit ipsum, a facilisis tortor nisi eget ex.
+                </p>
+                <div class="text">
+                  <span class="icon-quotes-left"></span>
+                    <p>Tempus massa ac arcu sollicitudin sollicitudin Vivamus neque urna, iaculis et orci id to your hospital Phasellus ac consequat turpis, sit amet fermentum nulla. Donec dignissim augue nunc.</p>
+                </div>
+                <p>Euismod nunc gravida eget. Vestibulum iaculis nibh facilisis felis iaculis vestibulum. Curabitur purus nulla, bibendum vitae varius pulvinar, molestie in massa. Quisque ut venenatis nunc, vitae rutrum libero. Duis eget consectetur urna. Ut ut aliquet magna. Nullam augue nulla, fermentum vel elit eu, posuere vehicula tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <ul class="tf-list-price">
+                  <li><i class="icon-checkmark"></i>One-time security check fee: $99.95</li>
+                  <li><i class="icon-checkmark"></i>Elite membership fee: $999.95 per month</li>
+                  <li><i class="icon-checkmark"></i>Coast to domestic flights: from $3,799.95</li>
+                </ul>
+                <div class="wd-user-post">
+                  <div class="avatar">
+                    <img src="images/avatar/avt-8.jpg" alt="image">
+                  </div>
+                  <div class="profile-cart">
+                    <div class="title">
+                      <h3>Towkibu Rahman</h3>
+                      <ul class="social">
+                        <li><a href="#"><i class="icon-facebook1"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                    <p>
+                      Fusce condimentum enim vestibulum libero gravida, ut accumsan quam bibendum. Curabitur gravida faucibus est sit amet cursus. Duis accumsa vel arcu pretium viverra.
+                    </p>
+                  </div>
+
+                </div>
+                <div class="wd-link-blog">
+                  <div class="prev-blog">
+                    <a href="#" class="icon-arrow-thin-left"></a>
+                    <div>
+                      <p>Prev Blog</p>
+                      <h3>Cloud Services</h3>
+                    </div>
+
+                  </div>
+                  <div class="next-blog">
+                    <div>
+                      <p>Next Blog</p>
+                      <h3>IT Consultancy</h3>
+                    </div>
+                    <a href="#" class="icon-arrow-thin-right active"></a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="wd-user-cmt">
+                <div class="title-cmt">
+                  <h3>02 Comments</h3>
+                  <p>Nunc velit metus, volutpat elementum euismod eget, cursus nec nunc.</p>
+                </div>
+                <div class="item-cmt">
+                  <img src="images/avatar/avt-9.jpg" alt="avatar">
+                  <div class="comment-right">
+                    <h3>Monsur Rahman Lito</h3>
+                    <p>Phasellus ac consequat turpis, sit amet fermentum nulla. Donec dignis
+                      nunc. Praesent bibendum erat ac lectus molestie lobortis.</p>
+                  </div>
+                </div>
+                <div class="item-cmt m-left-1">
+                  <img src="images/avatar/avt-10.jpg" alt="avatar">
+                  <div class="comment-right">
+                    <h3>Monsur Rahman Lito</h3>
+                    <p>Phasellus ac consequat turpis, sit amet fermentum nulla. Donec dignissim augue nunc. Praesent ac lectus molestie lobortis.</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="wd-post-comment">
+                <div class="title-cmt">
+                  <h3>Post Comments</h3>
+                  <p>Nunc velit metus, volutpat elementum euismod eget, cursus nec nunc.</p>
+                </div>
+                <form method="post">
+                  <div class="group-input">
+                    <div class="input">
+                      <label>Your Name</label>
+                      <input type="text" placeholder="Enter Your Name">
+                    </div>
+                    <div class="input">
+                      <label>Your Mail</label>
+                      <input type="text" placeholder="infoflex@info.com">
+                    </div>
+                  </div>
+                  <div class="textarea">
+                    <label>Your Message</label>
+                    <textarea placeholder="Write Your Message"></textarea>
+                  </div>
+                  <p><span>*</span>&nbsp; Call us 24/7  or fill out the form below to receive a free and confidential initial consultation.</p>
+                  <button type="submit">
+                    Post Comments <span class="icon-arrow"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- 文字作品 -->
+          <div class="cl8">
+            <div class="testimonials-wrap wedo-section" id="testimonials">
+              <div class="top-content">
+                <div class="wrap-title st-blog">
+                  <div>
+                    <div class="note">
+                      <span class="icon-icon-10 icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p></p>
+                    </div>
+                    <h1 class="title">
+                      我写了些什么？<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title">
+
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+
+
+                </div>
+                <p>用文字表达世界</p>
+              </div>
+              <div class="group-col-2 content st-tes">
+
+                <!-- box 1 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-4.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>原创故事</p>
+                      <h4><a href="#" class="wedo-link-item">“等边三角形”
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v1" class="wedo-link-item wrap-link"></a>
+                  </div>
+                </div>
+                <!-- end -->
+
+                <!-- box 2 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-4.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>读书随笔</p>
+                      <h4><a href="#" class="wedo-link-item">“唯有你永恒的夏日常新”
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v1" class="wedo-link-item wrap-link"></a>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 3 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-4.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>新媒体写作</p>
+                      <h4><a href="#" class="wedo-link-item">“是金子总会发光的，但我是老铁”
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v1" class="wedo-link-item wrap-link"></a>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- box 4 -->
+                <div class="cl2">
+                  <div class="box-portfolio">
+                    <div class="img-portfolio">
+                      <img src="images/portfolio/img-4.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                      <p>短剧写作</p>
+                      <h4><a href="#" class="wedo-link-item">“drama live！”
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"/>
+                          </svg>
+                        </a></h4>
+                    </div>
+                    <a href="#portfolio-v1" class="wedo-link-item wrap-link"></a>
+                  </div>
+                </div>
+                <!-- end -->
+
+              </div>
+              <!-- widget link -->
+
+                <ul class="tf-pagination st1 st-tes">
+                  <li><a href="#"><i class="icon-arrow-thin-left"></i></a></li>
+                  <li><a href="#">01</a></li>
+                  <li class="current"><a href="#">02</a></li>
+                  <li><a href="#">03</a></li>
+                  <li class="current"><a href="#"><i class="icon-arrow-thin-right"></i></a></li>
+                </ul>
+
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- contact -->
+          <div class="cl8">
+            <div class="contact-wrap wedo-section" id="contact">
+              <div class="top-content">
+                <div class="wrap-title st-blog">
+                  <div>
+                    <div class="note">
+                      <span class="icon-note icon"></span>
+                      <span>Hi!</span>
+                      &ensp;
+                      <p>Contact Us</p>
+                    </div>
+                    <h1 class="title">
+                      Contact Us<span>.</span>
+                    </h1>
+                  </div>
+                  <div class="box-title">
+
+                    <div class="circle-box">
+                      <img src="images/home/circle.svg" class="circle" alt="image">
+
+                      <img class="logo" src="images/logo-2.png" alt="image">
+                    </div>
+                  </div>
+
+
+                </div>
+                <p>Nullam dui dui, cursus at velit sit amet, condimentum aliquam nisi. Facilisis nibh vitae enim viverra
+                  mattis. Proin purus tortor, aliquet vel, ullamcorper consequat felis.</p>
+              </div>
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.3210101890018!2d-97.73587714092555!3d30.28492176241068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b59b2584cfb7%3A0x8131ee4f174a21de!2sThe%20University%20of%20Texas%20at%20Austin!5e0!3m2!1sen!2s!4v1681981942966!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="box-cart-contact">
+                <div class="tf-cart-contact">
+                  <div class="inner-left">
+                    <span><i class="icon-phone"></i> Contact Our Phone</span>
+                  </div>
+                  <h3>+55 (9900) 666 22</h3>
+                </div>
+                <div class="tf-cart-contact">
+                  <div class="inner-left">
+                    <span><i class="icon-mail"></i>Contact Email</span>
+                  </div>
+                  <h3>info.mirpur@gmail.com</h3>
+                </div>
+                <div class="tf-cart-contact">
+                  <div class="inner-left">
+                    <span><i class="icon-location"></i>Contact Location</span>
+                  </div>
+                  <h3>14/4, Bonosri, USA.</h3>
+                </div>
+              </div>
+              <div class="wd-post-comment">
+                <div class="title-cmt">
+                  <h3>Send A Message</h3>
+                  <p>Nunc velit metus, volutpat elementum euismod eget, cursus nec nunc.</p>
+                </div>
+                <form method="post">
+                  <div class="group-input">
+                    <div class="input">
+                      <label>Your Name</label>
+                      <input type="text" placeholder="Enter Your Name">
+                    </div>
+                    <div class="input">
+                      <label>Your Mail</label>
+                      <input type="text" placeholder="infoflex@info.com">
+                    </div>
+                  </div>
+                  <div class="textarea">
+                    <label>Your Message</label>
+                    <textarea placeholder="Write Your Message"></textarea>
+                  </div>
+                  <p><span>*</span>&nbsp; Call us 24/7  or fill out the form below to receive a free and confidential initial consultation.</p>
+                  <button type="submit">
+                    Submit Now <span class="icon-arrow"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </section>
+    <!-- end -->
+    <!-- Footer -->
+    <footer>
+    <div class="footer">
+      <p>Copyright <a href="#">lajoya </a>©2024. All rights By <a href="lajoyas@163.com">Reserved</a>.</p>
+    <!--    <img class="logo-footer" src="images/logo-footer-light.jpg" alt="images">
+      <img class="logo-footer-dark" src="images/logo-footer-dark.png" alt="images">-->
+    </div>
+    </footer>
+     <!-- End footer 设置鼠标样式的外观、动画与交互效果 -->
+    <div class="tf-mouse tf-mouse-outer"></div>
+    <div class="tf-mouse tf-mouse-inner"></div>
+
+  <script src="javascript/jquery.min.js"></script>
+  <script src="javascript/bootstrap.min.js"></script>
+  <script src="javascript/typed.umd.js"></script>
+  <script src="javascript/countto.js"></script>
+  <script src="javascript/jquery.cookie.js"></script>
+  <script src="javascript/appear.js"></script>
+  <script src="javascript/plugins.js"></script>
+  <script src="javascript/splt.min.js"></script>
+  <script src="javascript/main.js"></script>
+
+</body>
+
+
+</head>
+ <!--<body>
+    <pre id="displayArea">Loading...</pre>
+</body>-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
