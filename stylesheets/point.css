@@ -1,0 +1,72 @@
+#ai-assistant-message {
+    position: absolute;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+    z-index: 1000;
+    pointer-events: none;
+    transition: top 0.1s, left 0.1s;
+}
+
+/* 默认鼠标样式 */
+.tf-mouse {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s ease;
+}
+
+/* 外环 */
+.tf-mouse-outer {
+    opacity: 0.5;
+    animation: pulsate 1s infinite;
+}
+
+/* 内环 */
+.tf-mouse-inner {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: none;
+}
+
+/* 科技感闪动效果 */
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* 激活智能助手时的鼠标样式 */
+body.assistant-active .tf-mouse-outer {
+    border-color: #00f;
+    animation: pulsate-blue 1s infinite;
+}
+
+@keyframes pulsate-blue {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
